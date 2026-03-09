@@ -28,18 +28,17 @@ body
 
 }
 .logo{
-    display:flex;
-    align-items:center;
-    color:#fff;
-    font-size:28px;
-    font-weight:600;
-    font-family:'Orbitron', sans-serif;
-    margin-left:10px;
-
+display:flex;
+align-items:center;
+color:#fff;
+font-size:28px;
+font-weight:600;
+font-family:'Orbitron', sans-serif;
+margin-left:-119px;
+margin-top:18px;
 }
-
 .logo img{
-    width:340px;
+    width:360px;
     height:auto;
     object-fit:contain;
     mix-blend-mode:color-burn;
@@ -66,7 +65,7 @@ gap:20px;
 font-size:40px;
 color:#162938;
 cursor:pointer;
-margin-right:30px;
+margin-right:5px;
 display:flex;
 align-items:center;
 }
@@ -87,7 +86,7 @@ align-items:center;
 display:flex;
 align-items:center;
 position:relative;
-margin-right:10px;
+margin-right:50px;
 }
 
 .search-box input{
@@ -110,7 +109,7 @@ color:#162938;
 .navigation{
 display:flex;
 align-items:center;
-gap:25px;
+gap:5px;
 }
 
 .navigation a{
