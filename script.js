@@ -68,6 +68,8 @@ localStorage.setItem("userPassword",password)
 
 alert("Registration Successful")
 
+registerForm.reset()   // clears username, email, password fields
+
 wrapper.classList.remove("active")
 
 })
@@ -90,7 +92,13 @@ if(email === storedEmail && password === storedPassword){
 
 alert("Login Successful")
 
+loginForm.reset()   // clears email & password fields
+
+wrapper.classList.remove("active-popup")
+
+setTimeout(()=>{
 window.location.href="dashboard.html"
+},300)
 
 }
 else{
