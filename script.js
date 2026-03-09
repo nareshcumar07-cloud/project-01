@@ -114,16 +114,16 @@ alert("Invalid login")
 }
 
 })
-const menuIcon = document.querySelector(".menu-icon")
-const sidebar = document.querySelector(".sidebar")
+const menuIcon = document.querySelector(".menu-icon");
+const sidebar = document.querySelector(".sidebar");
 
 menuIcon.onclick = () => {
+sidebar.classList.toggle("active");
+}
+document.addEventListener("click",(e)=>{
 
-if(sidebar.style.left === "0px"){
-sidebar.style.left = "-250px"
-}
-else{
-sidebar.style.left = "0px"
+if(!sidebar.contains(e.target) && !menuIcon.contains(e.target)){
+sidebar.classList.remove("active");
 }
 
-}
+});
